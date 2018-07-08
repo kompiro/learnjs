@@ -1,10 +1,11 @@
 var fixture;
-
+/* global $ */
 function loadFixture(path) {  
   var html;
-  jQuery.ajax({
+  $.ajax({
     url: '/index.html',
     success: function(result) {
+      console.log(result);
       html = result;
     },
     async: false
